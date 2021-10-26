@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALMACEN DE ORTOPEDIA </title>
+
+</head>
+<body>
+<h1> ALMACEN DE ORTOPEDIA</h1>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $("#pridosis").change(function() {
+          var value = $(this).val();
+          $("#calculofecha").val(new Date(value).getFullYear());
+        });
+      });</script>
+  <input type="date" name="pridosis" id="pridosis" value="" /><br>
+  <input type="text" name="text2" id="calculofecha" value="xxxx">
+
+</body>
+
+
+</html>
